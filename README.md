@@ -1,48 +1,83 @@
 # Pricing & Revenue Leakage Analysis (Telco Churn)
 
 ## Executive Summary
-This project analyzes customer churn in a telecom subscription business to identify **revenue leakage** and the **highest-impact retention opportunities**.  
-Using **Python, SQL-style analysis, and Power BI**, I explore churn drivers (contract type, tenure, billing method, add-on services) and translate findings into **actionable business recommendations**.
+This project analyzes customer churn in a telecom subscription business to identify **revenue leakage**, **high-risk customer segments**, and **actionable retention opportunities**.
+
+Using **Python, SQL-style analysis, and Power BI**, I investigate key churn drivers (tenure, pricing, contract type, payment behavior, and service features) and translate insights into **business-focused recommendations**.
+
+The goal is not only to explain churn — but to highlight **where revenue is being lost and how it can be protected**.
+
+---
 
 ## Business Problem
-Churn reduces recurring revenue and increases acquisition costs.  
-The goal is to answer:
+Customer churn reduces recurring revenue and increases acquisition costs.
+
+This analysis answers:
 - Who is most likely to churn?
-- What product/pricing signals indicate revenue leakage?
-- Which interventions could reduce churn and protect revenue?
+- What pricing or product signals indicate revenue leakage?
+- Which actions could reduce churn and protect revenue?
 
-## Methodology
-1. **Data Understanding & Cleaning (Python)**
-   - Validate types, missing values, duplicates
-   - Prepare features for analysis
-2. **Exploratory Analysis**
-   - Churn rate breakdown by contract, tenure, charges, payment method, services
-3. **SQL-Style Queries**
-   - Business KPIs and cohort summaries
-4. **Power BI Dashboard**
-   - Executive churn overview + key segments + revenue impact
+---
 
-## Skills Demonstrated
-- Data cleaning & EDA (pandas)
-- KPI design (churn rate, ARPU proxy, retention segments)
-- SQL thinking (grouping, joins concepts, aggregations)
-- BI dashboard design (Power BI)
-- Business storytelling & recommendations
+## Key Insights
+- **Early-tenure customers are the highest risk**  
+  Churn is heavily concentrated among customers in their first year.
 
-## Repository Structure
-- `data/` → raw dataset
-- `python/` → notebooks (analysis & feature work)
-- `sql/` → SQL queries / KPI logic
-- `powerbi/` → dashboard files + screenshots
+- **Higher monthly charges correlate with churn**  
+  Suggesting pricing sensitivity and perceived value gaps.
 
-## Results (coming next)
-Next updates will include:
-- Churn segmentation insights
-- Revenue leakage estimate (proxy)
-- Power BI dashboard screenshots
-- Final recommendations and next steps
+- **Contract type strongly impacts retention**  
+  Month-to-month contracts show significantly higher churn than long-term contracts.
 
-## Dataset
-Dataset: **Telco Customer Churn** (public sample dataset).  
-Used strictly for portfolio demonstration.
+- **Payment behavior is a churn signal**  
+  Electronic check users churn far more than customers using automatic payments.
 
+- **Service bundles reduce churn**  
+  Customers without technical support or online security churn nearly 3× more.
+
+---
+
+## High-Risk Customer Profile
+Customers most likely to churn typically have:
+- Short tenure
+- Month-to-month contracts
+- Above-average monthly charges
+- No technical support or online security
+- Manual or electronic payment methods
+
+---
+
+## Business Recommendations
+- Strengthen **early customer onboarding**
+- Incentivize migration to **long-term contracts**
+- Bundle **technical support and security services**
+- Promote **automatic payment methods**
+- Reassess pricing for high-cost plans to ensure value alignment
+
+---
+
+## Tools & Skills Demonstrated
+- Python (Pandas, NumPy, data cleaning, EDA)
+- SQL-style analysis (grouping, aggregations, KPIs)
+- Power BI dashboard design
+- Business-focused data storytelling
+- Translating insights into actionable recommendations
+
+---
+
+## Project Structure
+python/ - Jupyter notebooks (analysis & insights)
+sql/ - SQL-style queries and KPI logic
+powerbi/ - Dashboards and visuals
+data/ - Dataset (excluded or sampled)
+assets/ - Images and screenshots
+
+
+---
+
+## Outcome
+This project demonstrates my ability to:
+- Analyze real-world business problems
+- Identify revenue risks using data
+- Communicate insights to non-technical stakeholders
+- Propose realistic, data-driven business actions
