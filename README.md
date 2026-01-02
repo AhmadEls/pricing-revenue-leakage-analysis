@@ -9,6 +9,14 @@ The goal is not only to explain churn — but to highlight **where revenue is be
 
 ---
 
+## Tools & Technologies
+- **Power BI** – data modeling, DAX measures, dashboarding
+- **Python** – Pandas, NumPy, exploratory data analysis
+- **SQL** – analytical queries, churn metrics, aggregations
+- **Git & GitHub** – version control and project organization
+
+---
+
 ## Business Problem
 Customer churn reduces recurring revenue and increases acquisition costs.
 
@@ -66,11 +74,11 @@ Customers most likely to churn typically have:
 ---
 
 ## Project Structure
-python/ - Jupyter notebooks (analysis & insights)
-sql/ - SQL-style queries and KPI logic
-powerbi/ - Dashboards and visuals
-data/ - Dataset (excluded or sampled)
-assets/ - Images and screenshots
+- `powerbi/` – Power BI dashboard (.pbix)
+- `assets/` – PDF export of the dashboard
+- `python/` – Jupyter notebook for data understanding & EDA
+- `sql/` – SQL queries for churn analysis and KPIs
+- `data/` – Raw dataset (or sample, if excluded)
 
 
 ---
