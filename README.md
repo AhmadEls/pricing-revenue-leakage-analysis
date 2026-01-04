@@ -64,10 +64,32 @@ Based on the analysis, the following actions could meaningfully reduce churn and
 - **Git & GitHub** – version control and project organization
 
 ---
+## Outcome
+This project demonstrates my ability to:
+- Analyze real-world business problems using data
+- Identify revenue risks and churn drivers
+- Build clear, decision-focused dashboards
+- Communicate insights to non-technical stakeholders
+- Propose realistic, data-driven business actions
+
+---
+
+## Next Steps & Potential Extensions
+If this analysis were extended further, potential next steps could include:
+
+- **Cohort analysis** to track churn behavior by signup month and lifecycle stage  
+- **Customer lifetime value (CLV) estimation** to quantify revenue impact of churn by segment  
+- **Predictive churn modeling** to proactively identify high-risk customers  
+- **A/B testing framework** to evaluate the effectiveness of retention strategies  
+- **Deeper SQL-based pipelines** to support production-scale reporting  
+
+These extensions would enable more proactive churn prevention and stronger revenue protection strategies.
+
+---
 
 ## Project Structure
 
-```text
+```
 pricing-revenue-leakage-analysis/
 ├── powerbi/
 │   └── Churn_Analysis.pbix
@@ -88,15 +110,4 @@ pricing-revenue-leakage-analysis/
 │
 └── README.md
 
-
-
----
-
-## Outcome
-This project demonstrates my ability to:
-- Analyze real-world business problems using data
-- Identify revenue risks and churn drivers
-- Build clear, decision-focused dashboards
-- Communicate insights to non-technical stakeholders
-- Propose realistic, data-driven business actions
 
