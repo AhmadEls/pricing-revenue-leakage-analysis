@@ -66,6 +66,8 @@ Based on the analysis, the following actions could meaningfully reduce churn and
 ---
 
 ## Project Structure
+
+```text
 pricing-revenue-leakage-analysis/
 ├── powerbi/
 │   └── Churn_Analysis.pbix
@@ -85,6 +87,7 @@ pricing-revenue-leakage-analysis/
 │   └── customer_churn_raw.csv
 │
 └── README.md
+
 
 
 ---
