@@ -1,53 +1,45 @@
-# Pricing & Revenue Leakage Analysis (Telco Churn)
+# 📊 Pricing & Revenue Leakage Analysis (Telco Churn)
 
 ## Executive Summary
 This project analyzes customer churn in a telecom subscription business to identify **revenue leakage**, **high-risk customer segments**, and **actionable retention opportunities**.
 
-Using **Python, SQL-style analysis, and Power BI**, I investigate key churn drivers (tenure, pricing, contract type, payment behavior, and service features) and translate insights into **business-focused recommendations**.
+Using **Python, SQL-style analysis, and Power BI**, I examine key churn drivers—**tenure, pricing, contract type, payment behavior, and service features**—and translate analytical findings into **business-focused recommendations**.
 
-The goal is not only to explain churn — but to highlight **where revenue is being lost and how it can be protected**.
-
----
-
-## Tools & Technologies
-- **Power BI** – data modeling, DAX measures, dashboarding
-- **Python** – Pandas, NumPy, exploratory data analysis
-- **SQL** – analytical queries, churn metrics, aggregations
-- **Git & GitHub** – version control and project organization
+The objective is not only to explain *why* customers churn, but to clearly highlight **where revenue is being lost and how it can be protected**.
 
 ---
 
 ## Business Problem
-Customer churn reduces recurring revenue and increases acquisition costs.
+Customer churn directly impacts recurring revenue and increases customer acquisition costs.
 
-This analysis answers:
-- Who is most likely to churn?
-- What pricing or product signals indicate revenue leakage?
-- Which actions could reduce churn and protect revenue?
+This analysis addresses three core business questions:
+- **Who is most likely to churn?**
+- **Which pricing or product signals indicate revenue leakage?**
+- **What targeted actions can reduce churn and protect revenue?**
 
 ---
 
 ## Key Insights
 - **Early-tenure customers are the highest risk**  
-  Churn is heavily concentrated among customers in their first year.
+  Churn is heavily concentrated within the first 12 months of the customer lifecycle.
 
 - **Higher monthly charges correlate with churn**  
-  Suggesting pricing sensitivity and perceived value gaps.
+  Suggesting pricing sensitivity and potential gaps between cost and perceived value.
 
 - **Contract type strongly impacts retention**  
-  Month-to-month contracts show significantly higher churn than long-term contracts.
+  Month-to-month contracts exhibit significantly higher churn compared to long-term contracts.
 
 - **Payment behavior is a churn signal**  
-  Electronic check users churn far more than customers using automatic payments.
+  Customers using electronic checks churn at much higher rates than those on automatic payments.
 
 - **Service bundles reduce churn**  
-  Customers without technical support or online security churn nearly 3× more.
+  Customers without technical support or online security churn nearly **3× more** than those with bundled services.
 
 ---
 
 ## High-Risk Customer Profile
-Customers most likely to churn typically have:
-- Short tenure
+Customers most likely to churn typically share the following characteristics:
+- Short tenure (≤ 12 months)
 - Month-to-month contracts
 - Above-average monthly charges
 - No technical support or online security
@@ -56,36 +48,52 @@ Customers most likely to churn typically have:
 ---
 
 ## Business Recommendations
-- Strengthen **early customer onboarding**
+Based on the analysis, the following actions could meaningfully reduce churn and protect revenue:
+- Strengthen **early customer onboarding and engagement**
 - Incentivize migration to **long-term contracts**
-- Bundle **technical support and security services**
+- Bundle **technical support and online security services**
 - Promote **automatic payment methods**
 - Reassess pricing for high-cost plans to ensure value alignment
 
 ---
 
-## Tools & Skills Demonstrated
-- Python (Pandas, NumPy, data cleaning, EDA)
-- SQL-style analysis (grouping, aggregations, KPIs)
-- Power BI dashboard design
-- Business-focused data storytelling
-- Translating insights into actionable recommendations
+## Tools & Technologies
+- **Power BI** – data modeling, DAX measures, interactive dashboards
+- **Python** – Pandas, NumPy, exploratory data analysis (EDA)
+- **SQL** – analytical queries, churn metrics, aggregations
+- **Git & GitHub** – version control and project organization
 
 ---
 
 ## Project Structure
-- `powerbi/` – Power BI dashboard (.pbix)
-- `assets/` – PDF export of the dashboard
-- `python/` – Jupyter notebook for data understanding & EDA
-- `sql/` – SQL queries for churn analysis and KPIs
-- `data/` – Raw dataset (or sample, if excluded)
-
+pricing-revenue-leakage-analysis/
+│
+├── powerbi/
+│   └── Churn_Analysis.pbix
+│
+├── assets/
+│   ├── Churn_Analysis.pdf
+│   ├── powerbi_overview.png
+│   └── powerbi_early_churn_analysis.png
+│
+├── python/
+│   └── 01_data_understanding.ipynb
+│
+├── sql/
+│   └── Churn_analysis.sql
+│
+├── data/
+│   └── customer_churn_raw.csv
+│
+└── README.md
 
 ---
 
 ## Outcome
 This project demonstrates my ability to:
-- Analyze real-world business problems
-- Identify revenue risks using data
+- Analyze real-world business problems using data
+- Identify revenue risks and churn drivers
+- Build clear, decision-focused dashboards
 - Communicate insights to non-technical stakeholders
 - Propose realistic, data-driven business actions
+
