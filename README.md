@@ -19,6 +19,26 @@ This analysis addresses three core business questions:
 
 ---
 
+
+---
+
+## KPI Definitions (Reporting Contract)
+
+**Reporting Grain:** 1 row = 1 customer (snapshot dataset)
+
+| KPI | Definition | Numerator | Denominator | Notes / Edge Cases |
+|---|---|---:|---:|---|
+| KPI \| Total Customers | Count of unique customers in dataset | DISTINCTCOUNT(customerID) | — | Use unique customerID (not row count). |
+| KPI \| Churned Customers | Customers with Churn = 'Yes' | DISTINCTCOUNT(customerID where Churn='Yes') | — | Churn is a label in this dataset (not time-based). |
+| KPI \| Churn Rate % | % of customers who churned | Churned Customers | Total Customers | Format as %; ensure slicers apply consistently. |
+| KPI \| Early Churn Rate % (0–12m) | Churn rate among tenure ≤ 12 months | Churned Customers (tenure ≤ 12) | Total Customers (tenure ≤ 12) | Tenure measured in months; confirm tenure has no negatives. |
+
+**Standard Filters (applies to all KPIs unless stated):**
+- Include only records with non-null `customerID` and `Churn`
+- Tenure-based KPIs use `tenure` in months
+
+---
+
 ## Key Insights
 - **Early-tenure customers are the highest risk**  
   Churn is heavily concentrated within the first 12 months of the customer lifecycle.
