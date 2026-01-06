@@ -93,6 +93,9 @@ To ensure data quality and reporting accuracy, the following validation checks w
 
 - **Service bundles reduce churn**  
   Customers without technical support or online security churn nearly **3× more** than those with bundled services.
+  
+- **Early-stage churn represents an estimated ~$69K in monthly revenue at risk, highlighting a material financial exposure concentrated in month-to-month contracts and fiber-optic services.
+
 
 ---
 
