@@ -22,9 +22,11 @@ This analysis addresses three core business questions:
 
 ---
 
-## KPI Definitions (Reporting Contract)
+## KPI Definitions (Business Reporting Contract)
 
 **Reporting Grain:** 1 row = 1 customer (snapshot dataset)
+
+**Time Context:** Snapshot dataset (churn label represents historical outcome, not a time-series churn event)
 
 | KPI | Definition | Numerator | Denominator | Notes / Edge Cases |
 |---|---|---:|---:|---|
@@ -38,6 +40,43 @@ This analysis addresses three core business questions:
 - Tenure-based KPIs use `tenure` in months
 
 ---
+
+
+---
+
+## Data Validation & Reconciliation
+
+To ensure data quality and reporting accuracy, the following validation checks were performed before analysis and dashboarding.
+
+
+---
+
+### Data Validation Checks
+
+| Check | Method | Result |
+|---|---|---|
+| Unique customer ID | COUNT(*) = COUNT(DISTINCT customerID) | ✅ Pass |
+| Null churn labels | Checked Churn IS NOT NULL | ✅ Pass |
+| Tenure validity | tenure >= 0 months | ✅ Pass |
+| Monthly charges validity | MonthlyCharges > 0 | ✅ Pass |
+
+
+---
+
+
+### KPI Reconciliation (SQL vs Power BI)
+
+| KPI | SQL Result | Power BI Result | Status |
+|---|---:|---:|---|
+| Total Customers | 7,043 | 7,043 | ✅ Match |
+| Churned Customers | 1,869 | 1,869 | ✅ Match |
+| Churn Rate % | 26.54% | 26.54% | ✅ Match |
+| Early Churn Rate % (0–12m) | 47.4% | 47.4% | ✅ Match |
+
+
+---
+
+
 
 ## Key Insights
 - **Early-tenure customers are the highest risk**  
